@@ -1,5 +1,6 @@
 from pint import UnitRegistry, get_application_registry
 from bartz import Bartz
+import numpy as np
 
 
 UR = UnitRegistry(system='mks')
@@ -19,7 +20,7 @@ At_Ac = 0.15
 combPr = 0.4529
 combCp = Q_(3.11,"kilojoule/kilogram/degK")
 
-for Twg_Tc in range(0.4,1.6,0.1):
+for Twg_Tc in np.arange(0.4,1.6,0.1):
 
     hg = Bartz(engineDt,combVisc,combCp,combPr,Pc,Mc,gam,engineR,cStar,At_Ac,Twg_Tc)
 
