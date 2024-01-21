@@ -17,8 +17,8 @@ engineR = Q_(0.636,"inch")
 cStar = Q_(1720,"meter/second")
 At_Ac = 0.15
 
-combPr = 0.4529
-combCp = Q_(3.11,"kilojoule/kilogram/degK")
+combPr = 0.6036
+combCp = Q_(2.6,"kilojoule/kilogram/degK")
 
 for Twg_Tc in np.arange(0.4,1.6,0.1):
 
